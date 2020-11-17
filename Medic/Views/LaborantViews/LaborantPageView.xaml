@@ -1,0 +1,27 @@
+﻿<Window x:Class="Medic.Views.LaborantViews.LaborantPageView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Medic.Views.LaborantViews" xmlns:helpviews="clr-namespace:Medic.HelpViews"
+        mc:Ignorable="d"
+        Title="Лаборант" Height="301.606" MinWidth="263" MinHeight="405" Width="177.008">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <helpviews:InputText NotNull="True" x:Name="pageFio" Title="ФИО" Grid.Row="0"/>
+        <helpviews:InputText NotNull="True" x:Name="pageSalary" Title="Зарплата" Grid.Row="1"/>
+        <helpviews:InputDate NotNull="True" x:Name="pageDate" Title="Дата рождения" Grid.Row="2"/>
+        <helpviews:InputCombobox NotNull="True" x:Name="pageLab" Title="Место работы" Grid.Row="3"/>
+        <helpviews:InputText NotNull="True" x:Name="pageLogin" Title="Логин" Grid.Row="4"/>
+        <helpviews:InputText NotNull="True" x:Name="pagePassword" Title="Пароль" Grid.Row="5"/>
+        <Button x:Name="BtnSave" Style="{StaticResource BtnStyle}" Content="Сохранить" Grid.Row="6"/>
+    </Grid>
+</Window>

@@ -1,0 +1,45 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Medic.Views.LaborantViews"
+        xmlns:DataSource="clr-namespace:Medic.DataSource" x:Class="Medic.Views.LaborantViews.LaborantsView"
+        mc:Ignorable="d"
+        Title="Лаборанты" Height="450" Width="800" MinWidth="450" Loaded="LaborantsView_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="150"/>
+            <ColumnDefinition MinWidth="150"/>
+            <ColumnDefinition MinWidth="150"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="3">
+            <Button Style="{StaticResource BtnStyle}" Content="Назад" Click="ClickBack"/>
+            <Button Style="{StaticResource BtnStyle}" Content="Выйти" Click="ClickExit"/>
+            <Button Style="{StaticResource BtnStyle}" Content="Распечатать" Click="ClickPrint"/>
+        </StackPanel>
+
+       
+
+        <Button Style="{StaticResource BtnStyle}" Name ="BtnAdd" Content="Добавить" Grid.Row="3" Grid.Column="0" Click="BtnAdd_Click"/>
+        <Button Style="{StaticResource BtnStyle}" Name ="BtnUpdate" Content="Обновить" Grid.Row="3" Grid.Column="1" Click="BtnUpdate_Click"/>
+        <Button Style="{StaticResource BtnStyle}" Name ="BtnDelete" Content="Удалить" Grid.Row="3" Grid.Column="2" Click="BtnDelete_Click"/>
+        <DataGrid x:Name="ClList" AutoGenerateColumns="False" Grid.Row="1" Grid.ColumnSpan="3" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="idColumn" Binding="{Binding Id}" Header="Код" />
+                <DataGridTextColumn x:Name="nameColumn" Binding="{Binding Fio}" Header="ФИО" />
+                <DataGridTextColumn x:Name="surnameColumn" Binding="{Binding Salary}" Header="Зарплата" />
+                <DataGridTextColumn x:Name="birthdayColumn" Binding="{Binding Birthday, StringFormat=\{0:d\}}" Header="Дата рождения" />
+                <DataGridTextColumn Binding="{Binding Laboratory.Title}" Header="Название лаборатории" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+    </Grid>
+</Window>

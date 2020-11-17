@@ -1,0 +1,21 @@
+﻿<Window x:Class="Medic.Views.AnalizeMochaViews.AnalizeMochaPageView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Medic.Views.AnalizeMochaViews" xmlns:helpviews="clr-namespace:Medic.HelpViews"
+        mc:Ignorable="d"
+        Title="AnalizeMochaPageView" Height="342.029" MinWidth="263" MinHeight="300" Width="277.93">
+    <Grid>
+        <StackPanel>
+            <helpviews:InputText NotNull="True" x:Name="pageZhelezo" Title="Железо"/>
+            <helpviews:InputText NotNull="True" x:Name="pageMocha" Title="Урина"/>
+            <helpviews:InputCombobox NotNull="True" x:Name="pageClient" Title="Клиент"/>
+            <helpviews:InputCombobox NotNull="True" x:Name="pageLaborant" Title="Лаборант" />
+            <Button x:Name="BtnSave" Style="{StaticResource BtnStyle}" Content="Сохранить"/>
+            <Button x:Name="BtnBarcode" Style="{StaticResource BtnStyle}" Content="Показать штрих код" Click="BtnBarcode_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

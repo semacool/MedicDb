@@ -1,0 +1,20 @@
+﻿<Window x:Class="Medic.Views.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Medic.Views"
+        mc:Ignorable="d"
+        Title="Menu" Height="214.5" Width="312.5" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0" Style="{StaticResource BtnStyle}" Content="Список клиентов" Click="ClickClients"/>
+        <Button Grid.Row="1" Style="{StaticResource BtnStyle}" Content="Список Лаборантов" Click="ClickLaborants"/>
+        <Button Grid.Row="2" Style="{StaticResource BtnStyle}" Content="Список Анализов" Click="ClickAnalizes"/>
+    </Grid>
+</Window>

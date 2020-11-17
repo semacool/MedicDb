@@ -1,0 +1,24 @@
+﻿<Window x:Class="Medic.Views.MedicAuth"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Medic.HelpViews"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="259.938" Width="358.383" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Header="Логин">
+            <TextBox x:Name="TbLogin" Style="{StaticResource TboxStyle}"/>
+        </GroupBox>
+        <GroupBox Header="Пароль" Grid.Row="1">
+            <PasswordBox  x:Name="TbPassword" Style="{StaticResource PboxStyle}"/>
+        </GroupBox>
+        <Button Grid.Row="2" Style="{StaticResource BtnStyle}" Content="Авторизация" Click="Auth_Click"/>
+    </Grid>
+</Window>
