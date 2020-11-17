@@ -26,6 +26,8 @@ namespace Medic.DataSource
         public virtual DbSet<UserType> UserTypes { get; set; }
         public virtual DbSet<BarcodeChar> BarcodeChars { get; set; }
 
+        
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Admin>()

@@ -17,7 +17,7 @@
             <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
         <helpviews:InputText NotNull="True" x:Name="pageFio" Title="ФИО" Grid.Row="0"/>
-        <helpviews:InputText NotNull="True" x:Name="pageSalary" Title="Зарплата" Grid.Row="1"/>
+        <helpviews:InputText NotNull="True" x:Name="pageSalary" Title="Зарплата" Pattern="\d+" Grid.Row="1"/>
         <helpviews:InputDate NotNull="True" x:Name="pageDate" Title="Дата рождения" Grid.Row="2"/>
         <helpviews:InputCombobox NotNull="True" x:Name="pageLab" Title="Место работы" Grid.Row="3"/>
         <helpviews:InputText NotNull="True" x:Name="pageLogin" Title="Логин" Grid.Row="4"/>

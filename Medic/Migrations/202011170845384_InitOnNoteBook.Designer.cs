@@ -7,13 +7,13 @@ namespace Medic.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Base : IMigrationMetadata
+    public sealed partial class InitOnNoteBook : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Base));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitOnNoteBook));
         
         string IMigrationMetadata.Id
         {
-            get { return "202011131727548_Base"; }
+            get { return "202011170845384_InitOnNoteBook"; }
         }
         
         string IMigrationMetadata.Source

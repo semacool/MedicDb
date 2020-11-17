@@ -74,21 +74,9 @@
     <Compile Include="HelpViews\InputCombobox.xaml.cs">
       <DependentUpon>InputCombobox.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011131727548_Base.cs" />
-    <Compile Include="Migrations\202011131727548_Base.Designer.cs">
-      <DependentUpon>202011131727548_Base.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011131728388_AddNewFields.cs" />
-    <Compile Include="Migrations\202011131728388_AddNewFields.Designer.cs">
-      <DependentUpon>202011131728388_AddNewFields.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011141327334_AddBarcodeTable.cs" />
-    <Compile Include="Migrations\202011141327334_AddBarcodeTable.Designer.cs">
-      <DependentUpon>202011141327334_AddBarcodeTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011141334534_AddBarcodeTable2.cs" />
-    <Compile Include="Migrations\202011141334534_AddBarcodeTable2.Designer.cs">
-      <DependentUpon>202011141334534_AddBarcodeTable2.cs</DependentUpon>
+    <Compile Include="Migrations\202011170845384_InitOnNoteBook.cs" />
+    <Compile Include="Migrations\202011170845384_InitOnNoteBook.Designer.cs">
+      <DependentUpon>202011170845384_InitOnNoteBook.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Services\CreateDocFromDataGrid.cs" />
@@ -238,17 +226,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\202011131727548_Base.resx">
-      <DependentUpon>202011131727548_Base.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011131728388_AddNewFields.resx">
-      <DependentUpon>202011131728388_AddNewFields.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011141327334_AddBarcodeTable.resx">
-      <DependentUpon>202011141327334_AddBarcodeTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011141334534_AddBarcodeTable2.resx">
-      <DependentUpon>202011141334534_AddBarcodeTable2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202011170845384_InitOnNoteBook.resx">
+      <DependentUpon>202011170845384_InitOnNoteBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

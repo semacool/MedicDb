@@ -20,7 +20,6 @@ namespace Medic.Services
             var doc = new FlowDocument();
             var column = new TableColumn();
 
-
             foreach(var col in data.Columns) {
                 row.Cells.Add(getCell(col.Header.ToString(),16));
             }
